@@ -23,7 +23,7 @@ if(data){
     id = LIST.length; // set the id to the last one in the list
     loadList(LIST); // load the list to the user interface
 }else{
-    // if data isn't empty
+// if data isn't empty
     LIST = [];
     id = 0;
 }
@@ -116,9 +116,9 @@ list.addEventListener("click", function(event){
     const element = event.target; // return the clicked element inside list
     const elementJob = element.attributes.job.value; // complete or delete
 
-    if(elementJob == "complete"){
+    if (elementJob == "complete") {
         completeToDo(element);
-    }else if(elementJob == "delete"){
+    } else if(elementJob == "delete") {
         removeToDo(element);
     }
 
